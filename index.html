@@ -1,106 +1,2237 @@
 
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>جرعتي - حاسبة جرعات الأطفال</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; padding: 20px; background-color: #f7f7f7; }
-        h2 { color: #2c3e50; }
-        label, select, input, button { display: block; margin-top: 10px; font-size: 16px; }
-        #result { margin-top: 20px; background-color: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
-        .footer { margin-top: 30px; font-size: 14px; color: #555; }
-    </style>
+
+
+
+<title>دليل أفضل المواقع </title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="ar-sa" />
+<meta name="abstract" content="دليل أفضل المواقع "> 
+<meta name="description" content="دليل أفضل المواقع العربية والأجنبية مرتبة حسب عدد الزيارات " />
+<meta name="keywords" content="دليل أفضل المواقع , الدليل الجامع , 202020" />
+<meta name="audience" content="all" />
+<meta name="rating" content="general" />
+<meta name="Author" content="Tariq Aljamea" /> 
+<meta name="distribution" content="global" /> 
+<meta name="googlebot" content="index,follow" />
+<meta name="robots" content="noodp,noydir,index,follow" />
+
+<link rel="stylesheet" type="text/css" href="anylinkmenu1.css" />
+<script type="c1cc7d281269921753a77d0a-text/javascript" src="menucontents1.js"></script>
+<script type="c1cc7d281269921753a77d0a-text/javascript" src="anylinkmenu1.js"></script>
+<script type="c1cc7d281269921753a77d0a-text/javascript"> anylinkmenu.init("menuanchorclass")</script>
+
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs/ajaxtabs.css" />
+<script type="c1cc7d281269921753a77d0a-text/javascript" src="ajaxtabs/ajaxtabs.js"></script>
+
+<script type="c1cc7d281269921753a77d0a-text/javascript" src="js/jquery.js"></script>
+<script type="c1cc7d281269921753a77d0a-text/javascript" src="js/interface.js"></script>
+
+<!--[if lt IE 7]>
+ <style type="text/css">
+ div, img { behavior: url(iepngfix.htc) }
+ </style>
+<![endif]-->
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+        <!-- Additional IE/Win specific style sheet (Conditional Comments) -->
+        <!--[if lte IE 7]>
+        <link rel="stylesheet" href="jquery.tabs-ie.css" type="text/css" media="projection, screen">
+        <![endif]-->
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	background-image: url();
+	background-repeat: repeat-x;
+}
+.tabs {
+	background:none;
+}
+
+
+
+.style5 style8 a {
+}
+
+a:link {
+	text-decoration: none;
+	color: #666666;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #666666;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #666666;
+}
+
+a:active {
+	text-decoration: none;
+	color: #666666;
+}
+
+p {
+	padding: 1px;
+	margin: 3px;
+}
+
+.style33 {	color: #000000;
+	font-family: tahoma;
+	font-size: 14px;
+}
+.awael {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	color: #F00;
+}
+.style43 {color: #666666; font-family: tahoma; font-size: 12px; }
+.style45 {color: #993300}
+.style47 {font-size: 18px}
+.style48 {font-size: 12px}
+.style50 {color: #CC0000}
+
+-->
+
+</style>
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+<script type="c1cc7d281269921753a77d0a-text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+
+
+
+<script src="Scripts/AC_RunActiveContent.js" type="c1cc7d281269921753a77d0a-text/javascript"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177421735-1" type="c1cc7d281269921753a77d0a-text/javascript"></script>
+<script type="c1cc7d281269921753a77d0a-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177421735-1');
+</script>
+
+<script type="c1cc7d281269921753a77d0a-text/javascript">
+function showResult(str) {
+  if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="0px";
+    }
+  }
+  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
 </head>
 <body>
-    <h2>💊 تطبيق جرعتي – حاسبة جرعات الأطفال</h2>
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+<script type="c1cc7d281269921753a77d0a-text/javascript">
+<!-- 
+	rnd.today=new Date();
+	rnd.seed=rnd.today.getTime();
 
-    <label for="ageYears">العمر (بالسنوات):</label>
-    <select id="ageYears">
-        <option value="0">0 سنة</option><option value="1">1 سنة</option><option value="2">2 سنة</option><option value="3">3 سنة</option><option value="4">4 سنة</option><option value="5">5 سنة</option><option value="6">6 سنة</option><option value="7">7 سنة</option><option value="8">8 سنة</option><option value="9">9 سنة</option><option value="10">10 سنة</option><option value="11">11 سنة</option><option value="12">12 سنة</option><option value="13">13 سنة</option><option value="14">14 سنة</option><option value="15">15 سنة</option><option value="16">16 سنة</option>
-    </select>
+	function rnd() {
+        rnd.seed = (rnd.seed*9301+49297) % 233280;
+        return rnd.seed/(233280.0);
+	}
 
-    <label for="ageMonths">العمر (بالأشهر):</label>
-    <select id="ageMonths">
-        <option value="0">0 شهر</option><option value="1">1 شهر</option><option value="2">2 شهر</option><option value="3">3 شهر</option><option value="4">4 شهر</option><option value="5">5 شهر</option><option value="6">6 شهر</option><option value="7">7 شهر</option><option value="8">8 شهر</option><option value="9">9 شهر</option><option value="10">10 شهر</option><option value="11">11 شهر</option>
-    </select>
+	function rand(number) {
+		var result = Math.floor(rnd() * number);
+		if (!result) result = 0;
+		return result
+	}
+		var rotator1imgs = new Array("https://www.202020.net/rotator/business.gif", 
+"https://www.202020.net/rotator/mapservice.gif",
+"https://www.202020.net/rotator/mazad.gif",
+"https://www.202020.net/rotator/srem.gif",
+"https://www.202020.net/rotator/vsafety.gif",
+"https://www.202020.net/rotator/virustotal.gif",
+"https://www.202020.net/rotator/misk.gif",
+"https://www.202020.net/rotator/ksavisa.gif",		
+"https://www.202020.net/rotator/masar.gif", 
+"https://www.202020.net/rotator/sakani.gif", 
+"https://www.202020.net/rotator/jadarat.gif", 
+"https://www.202020.net/rotator/teleworks.gif", 
+"https://www.202020.net/rotator/furas.gif", 
+"https://www.202020.net/rotator/emazad.gif", 
+"https://www.202020.net/rotator/tuwaiq.gif", 
+"https://www.202020.net/rotator/freelance.gif", 
+"https://www.202020.net/rotator/safcsp.gif", 
+"https://www.202020.net/rotator/wafi.gif", 
+"https://www.202020.net/rotator/balady.gif", 
+"https://www.202020.net/rotator/doroob.gif", 
+"https://www.202020.net/rotator/etec.gif", 
+"https://www.202020.net/rotator/ethrai.gif", 
+"https://www.202020.net/rotator/maroof.gif", 
+"https://www.202020.net/rotator/mudad.gif", 
+"https://www.202020.net/rotator/muqeem.gif", 
+"https://www.202020.net/rotator/musaned.gif", 
+"https://www.202020.net/rotator/tarteeb.gif", 
+"https://www.202020.net/rotator/taqdeer.gif", 
+"https://www.202020.net/rotator/wizzair.gif", 
+"https://www.202020.net/rotator/msn.gif", 
+"https://www.202020.net/rotator/sar.gif", 
+"https://www.202020.net/rotator/hhr.gif", 
+"https://www.202020.net/rotator/efaa.gif", 
+"https://www.202020.net/rotator/saudipedia.gif", 
+"https://www.202020.net/rotator/ehkaam.gif", 
+"https://www.202020.net/rotator/uap.gif",
+"https://www.202020.net/rotator/nvg.gif");
 
-    <label for="weight">الوزن (كغ):</label>
-    <input type="number" id="weight" placeholder="أدخل وزن الطفل بالكيلو" step="0.1" min="1">
+	var rotator1lnks = new Array("https://business.sa",
+"https://mapservice.alriyadh.gov.sa",
+"https://mazad.absher.sa",
+"https://srem.moj.gov.sa",
+"https://vi.vsafety.sa",
+"https://www.virustotal.com",
+"https://misk.org.sa",
+"https://ksavisa.sa", 
+"https://masar.sa", 
+"https://sakani.sa", 
+"https://jadarat.sa", 
+"https://teleworks.sa", 
+"https://furas.momra.gov.sa", 
+"https://emazad.sa", 
+"https://tuwaiq.edu.sa", 
+"https://freelance.sa", 
+"https://safcsp.org.sa", 
+"https://wafi.housing.gov.sa", 
+"https://balady.gov.sa", 
+"https://doroob.sa", 
+"https://www.etec.gov.sa", 
+"https://ethrai.sa", 
+"https://maroof.sa", 
+"https://mudad.com.sa", 
+"https://muqeem.sa", 
+"https://musaned.com.sa", 
+"https://tarteeb.edu.sa", 
+"https://www.taqdeer.sa", 
+"https://wizzair.com/ar-ae", 
+"https://www.msn.com/ar-sa/weather/maps", 
+"https://www.sar.com.sa/ar", 
+"https://sar.hhr.sa", 
+"https://efaa.sa", 
+"https://saudipedia.com", 
+"https://ehkaam.sa", 
+"https://www.uap.sa", 
+"https://nvg.gov.sa");
 
-    <label for="medication">اختر الدواء:</label>
-    <select id="medication">
-        <option value="paracetamol">باراسيتامول (Panadol / Fevadol)</option>
-        <option value="ibuprofen">ايبوبروفين (Brufen / Advil)</option>
-        <option value="amoxicillin">أموكسيسيلين (Amoxil / Hibiotic)</option>
-        <option value="augmentin">أوغمنتين (Amoxicillin + Clavulanate)</option>
-        <option value="azithromycin">أزيثرومايسين (Zithromax)</option>
-        <option value="clarithromycin">كلاريثرومايسين (Klacid)</option>
-        <option value="ceftriaxone">سيفترياكسون (Rocephin)</option>
-        <option value="salbutamol_neb">فينتولين نيبول</option>
-        <option value="salbutamol_syrup">فينتولين شراب</option>
-    </select>
+	var rotator1alt = new Array("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "");
+	var rotatorHtml = "";
+	var endJs = "";
 
-    <button onclick="calculateDose()">احسب الجرعة</button>
+	for(var img in rotator1imgs){
+		var thisImg = new Image();
+		thisImg.src = rotator1imgs[img];
+	}
+	var rotator1imgCt = 37;
+	var rotator1currentAd = rand(rotator1imgCt);
+	var openlink = "";
+	var rotator1banner = document.getElementById('rotator1');
+	var rotator1link = document.getElementById('rotator1adLink');
+	
+		if(rotator1lnks[rotator1currentAd] != ""){
+		rotatorHtml += '<a href="' + rotator1lnks[rotator1currentAd] + '" id="rotator1adLink"  target="_blank">';
+		endJs = "</a>";
+	}
+	rotatorHtml += '<img src="' + rotator1imgs[rotator1currentAd] + '" alt = "' + rotator1alt[rotator1currentAd] + '" id="rotator1banner">' + endJs;
+	document.getElementById("rotator1_div").innerHTML = rotatorHtml;	
+// -->
+</script>
 
-    <div id="result"></div>
 
-    <div class="footer">
-        تم بواسطة: د. عبدالوهاب عبد المنان الشيخ – طبيب أطفال وطوارئ<br>
-        مطور تطبيق <strong>جرعتي</strong>
+
+
+
+<div align="center">
+<table width="983" border="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td width="566" align="center">&nbsp;</td>
+    <td width="199" rowspan="4" align="left"><a href="/" target="_parent"><img src="x/na/logo_grreen_0.png" width="158" height="96" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td width="204"><img src="x/blank.gif" width="15" height="40" border="0" /></td>
+    <td width="566" align="center"><a href="edu.html" target="_blank">تعليم</a> &nbsp; |  &nbsp; <a href="gov.html" target="_blank">خدمات</a> &nbsp; |  &nbsp; <a href="shopping.html" target="_blank">تسوق</a> &nbsp; |  &nbsp; <a href="traveling.html" target="_blank">سفر</a> &nbsp; |  &nbsp; <a href="biz.html" target="_blank">تجارة</a> &nbsp; |  &nbsp; <a href="english.html" target="_blank">لغة</a> &nbsp; |  &nbsp; <a href="search.html" target="_blank">بحث</a> </td>
+  </tr>
+  <tr>
+    <td align="center"><p class="style45">&nbsp;</p></td>
+    <td><div class="dock" id="dock">
+      <div class="dock-container"> <a class="dock-item" href="https://www.google.com.sa/maps" target="_blank" rel="nofollow"> <img src="x/rr3.png" dir="rtl" title="خرائط" /><span>خرائط</span></a> <a class="dock-item" href="https://www.saudiexchange.sa" target="_blank" rel="nofollow"><img src="x/rr6.png" dir="rtl" title="تداول" /><span>تداول</span></a> <a class="dock-item" href="https://www.msn.com/ar-sa/weather/" target="_blank" rel="nofollow"><img src="x/rr8.png" dir="rtl" title="الطقس" /><span>الطقس</span></a> <a class="dock-item" href="https://www.xe.com/currencyconverter/" target="_blank" rel="nofollow"><img src="x/rr14.png" dir="rtl" title="تحويل عملة" /><span>تحويل عملة</span></a> <a class="dock-item" href="https://www.calculator.net/" target="_blank" rel="nofollow"><img src="x/rr2.png" dir="rtl" title="حاسبة" /><span>حاسبة</span></a> <a class="dock-item" href="https://www.speedtest.net/" target="_blank" rel="nofollow"><img src="x/rr7.png" dir="rtl" title="سرعة النت" /><span>سرعة النت</span></a> <a class="dock-item" href="https://translate.google.com/" target="_blank" rel="nofollow"><img src="x/rr13.png" dir="rtl" title="قاموس" /><span>قاموس</span></a> <a class="dock-item" href="https://www.timeanddate.com/worldclock/" target="_blank" rel="nofollow"><img src="x/rr4.png" dir="rtl" title="التوقيت" /><span>التوقيت</span></a> <a class="dock-item" href="https://www.timeanddate.com/calendar/?year=2025&country=74" target="_blank" rel="nofollow"><img src="x/rr5.png" dir="rtl" title="تقويم" /><span>تقويم</span></a> <a class="dock-item" href="http://www.ummulqura.org.sa/" target="_blank" rel="nofollow"><img src="x/rr1.png" dir="rtl" title="مواقيت الصلاة" /><span>مواقيت الصلاة</span></a></div>
     </div>
+        <script type="c1cc7d281269921753a77d0a-text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#dock').Fisheye(
+				{
+					maxWidth: 40,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container',
+					itemWidth: 35,
+					proximity: 90,
+					halign : 'center'
+				}
+			)
+		}
+	);
 
-    <script>
-        function calculateDose() {
-            var weight = parseFloat(document.getElementById("weight").value);
-            var med = document.getElementById("medication").value;
+        </script></td>
+  </tr>
+  <tr>
+    <td align="center"><p class="style45">الزوار يبحثون</p>
+        <p><a href="search.html" target="_blank"><img src="x/na/blue_bar1_2.gif" width="180" height="25" border="0" /></a></p></td>
+    <td>&nbsp;</td>
+    </tr>
+</table>
+<table width="200" border="0" align="center">
+  <tr>
+    <td align="right">&nbsp;</td>
+  </tr>
+</table>
+<table width="907" border="0">
+  <tr>
+    <td width="236">&nbsp;</td>
+    <td width="404" align="right" dir="rtl">تعرّف على ...</td>
+    <td width="253">&nbsp;</td>
+  </tr>
+</table>
+<table width="982" border="0">
+  <tr>
+    <td align="center" valign="middle" class="style33">&nbsp;</td>
+    <td align="center" valign="middle" class="style43">&nbsp;</td>
+    <td align="center" valign="middle" class="style43">&nbsp;</td>
+    <td rowspan="2" align="right" valign="top"><div id = "rotator1_div"></div></td>
+    <td align="center" valign="middle" class="style43">&nbsp;</td>
+    <td align="center" valign="middle" class="style43">&nbsp;</td>
+    <td align="center" valign="middle" class="style43">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="88" align="center"><p><a href="" class="menuanchorclass someotherclass" rel="anylinkmenu11[click]" rev="lr"><img src="images/aa10.png" width="80" height="54" border="0" />خدمات</a></p></td>
+    <td width="88" align="center"><p><a href="" class="menuanchorclass someotherclass" rel="anylinkmenu2[click]" rev="lr"><img src="images/aa12.png" width="80" height="54" border="0" />راديو</a></p></td>
+    <td width="88" align="center"><a href="booking.html" target="_blank"><img src="images/aa14.png" width="80" height="54" border="0" />فنادق</a></td>
+    <td width="88" align="center"><p><a href="" class="menuanchorclass someotherclass" rel="anylinkmenu3[click]" rev="lr"><img src="images/aa11.png" width="80" height="54" border="0" />تلفزيون</a></p></td>
+    <td width="88" align="center"><p><a href="" class="menuanchorclass someotherclass" rel="anylinkmenu12[click]" rev="lr"><img src="images/aa2.png" width="80" height="54" border="0" />جامعات</a></p></td>
+    <td width="89" align="center"><p><a href="" class="menuanchorclass someotherclass" rel="anylinkmenu13[click]" rev="lr"><img src="images/aa1.png" width="80" height="54" border="0" />وزارات</a></p></td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center" valign="top">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center"><span class="style50">ترند </span> <img src="rotator/trend.gif" width="20" height="14" border="0" /> <a href="https://chat.deepseek.com/" target="_blank"> &nbsp; ديب سيك</a>&nbsp; <span class="style50"> &nbsp;| &nbsp; </span><span class="style50"></span> <a href="https://vi.vsafety.sa" target="_blank">الفحص الدوري</a> <span class="style50"> &nbsp; | &nbsp; </span> <a href="https://mazad.absher.sa" target="_blank">مزاد اللوحات </a><span class="style50"> &nbsp; | &nbsp; </span> <a href="https://srem.moj.gov.sa/" target="_blank">البورصة العقارية</a> <span class="style50"> &nbsp; | &nbsp; </span> <a href="https://www.kooora.com/?region=-1&amp;area=0" title="" target="_blank">مباريات اليوم</a> <span class="style50"> &nbsp; | &nbsp; </span><a href="https://chatgpt.com/" title="" target="_blank">شات جي بي تي</a> <span class="style50"> &nbsp; | &nbsp; </span><a href="https://www.uap.sa/" title="" target="_blank">قبول</a></td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center"><img src="x/blank.gif" width="15" height="5" border="0" /></td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center"><a href="https://web.whatsapp.com/" target="_blank"> whatsapp</a> <span class="style50">|</span> <a href="https://www.tiktok.com/" target="_blank">tiktok</a> <span class="style50">|</span> <a href="https://chatgpt.com/" target="_blank">chatgpt</a> <span class="style50">|</span> <a href="https://temu.to/m/ukkidft85lt" target="_blank">temu</a> <span class="style50">|</span> <a href="https://www.trendyol.com/" target="_blank">trendyol</a> <span class="style50">|</span> <a href="https://www.booking.com/index.ar.html?aid=2164645" target="_blank">booking</a> <span class="style50">|</span> <a href="https://www.canva.com/" target="_blank">canva</a> <span class="style50">|</span> <a href="https://sa.iherb.com/" target="_blank">iherb </a></td>
+  </tr>
+</table>
+<table width="200" border="0" align="center" cellpadding="2">
+    <tr>
+      <td valign="bottom">&nbsp;</td>
+      <td valign="bottom">&nbsp;</td>
+      <td align="center" valign="bottom">&nbsp;</td>
+      <td colspan="7" align="center" valign="middle" class="style50">&nbsp;</td>
+      <td align="center" valign="bottom">&nbsp;</td>
+      <td valign="bottom">&nbsp;</td>
+      <td valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td valign="bottom">&nbsp;</td>
+      <td valign="bottom">&nbsp;</td>
+      <td align="center" valign="bottom">&nbsp;</td>
+      <td colspan="7" align="center" valign="middle" class="style50" dir="rtl" >البحث السريع</td>
+      <td align="center" valign="bottom">&nbsp;</td>
+      <td valign="bottom">&nbsp;</td>
+      <td valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+    <td align="center" valign="bottom">&nbsp;</td>
+    <td colspan="7" rowspan="2" align="center" valign="top" class="style50"><form>
+      <input type="text" size="45" onkeyup="if (!window.__cfRLUnblockHandlers) return false; showResult(this.value)" dir="rtl" data-cf-modified-c1cc7d281269921753a77d0a-="" />
+      <div id="livesearch" ></div>
+    </form></td>
+    <td align="center" valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+    <td valign="bottom">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="bottom"><a href="https://sa.wego.com/" target="_blank"><img src="x/wego.png" dir="rtl" title="محرك بحث للفنادق والرحلات الجوية" width="80" height="40" border="0" /></a></td>
+    <td valign="bottom"><a href="https://www.tiktok.com" target="_blank"><img src="x/na/161.png" title="" width="80" height="40" border="0" /></a></td>
+    <td align="center" valign="bottom"><a href="https://www.google.com.sa/" target="_blank" rel="nofollow"><img src="x/c9.png"  width="80" height="40" border="0" dir="rtl" title="قوقل السعودية" /></a></td>
+    <td align="center" valign="bottom"><a href="https://www.flynas.com/ar" target="_blank" rel="nofollow"><img src="x/k2a.png" dir="rtl" title="طيران ناس هي شركة طيران سعودية خاصة، تعمل  
+ بنظام الطيران منخفض التكلفة تأسست عام 2007" width="80" height="40" border="0" /></a></td>
+    <td valign="bottom"><a href="https://www.booking.com/index.ar.html?aid=2164645" target="_blank"><img src="x/na/63.png" dir="rtl" title="" width="80" height="40" border="0" /></a></td>
+    <td valign="bottom"><a href="https://www.saudia.com/" target="_blank" rel="nofollow"><img src="x/na/saudia_new_logo.png" dir="rtl" title="طيران الخطوط السعودية | أفضل عروض الأسعار والخدمات" width="80" height="40" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><img src="x/d1.png" dir="rtl" title="YouTube" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://x.com/" target="_blank" rel="nofollow"><img src="x/na/x.png" dir="rtl" title="twitter.com" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://sabq.org/" target="_blank" rel="nofollow"><img src="x/a1.png" dir="rtl" title="صحيفة الكترونية سعودية هدفها السبق في نقل 
+الحدث بمهنية ومصداقية خدمة للوطن والمواطن" width="80" height="40" border="0" /></a></td>
+    <td rowspan="2"><img src="x/blank.gif" width="15" height="15" border="0" /></td>
+    <td><a href="https://www.akhbaar24.com/" target="_blank" rel="nofollow"><img src="x/a9a.png" dir="rtl" title="يهتم موقع أخبار 24 بالأخبار والأحداث التي تهم  
+ المواطن والمتابع السعودي سواء كانت محلية أو خارجية" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.alarabiya.net/" target="_blank" rel="nofollow"><img src="x/c1.png" dir="rtl" title="العربية #أن_تعرف_أكثر" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.kooora.com/" target="_blank" rel="nofollow"><img src="x/r1.png" dir="rtl" title="كووورة: الموقع العربي الرياضي الأول" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.okaz.com.sa/" target="_blank" rel="nofollow"><img src="x/na/74.png" dir="rtl" title="صحيفة تصدر عن مؤسسة عكاظ للصحافة والنشر" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.alriyadh.com/" target="_blank"><img src="x/b1.png" dir="rtl" title="النسخة الإلكترونية من صحيفة الرياض  
+ اليومية الصادرة عن مؤسسة اليمامة الصحفية" width="80" height="40" border="0" /></a></td>
+    <td rowspan="2"><img src="x/blank.gif" width="15" height="15" border="0" /></td>
+    <td><a href="https://www.saudiexchange.sa" target="_blank" rel="nofollow"><img src="x/n1.png" dir="rtl" title="السوق المالية السعودية تداول" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.iam.gov.sa/" target="_blank" rel="nofollow"><img src="x/o33.png" dir="rtl" title="النفاذ الوطني الموحد" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.absher.sa/" target="_blank"><img src="x/o1.png" dir="rtl" title="أبشر  
+الأحوال المدنية  
+المرور  
+الجوازات  
+المقيمون
+إمارات المناطق  
+ الاعتراض على 
+المخالفات المرورية" width="80" height="40" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://haraj.com.sa" target="_blank" rel="nofollow"><img src="x/g1.png" dir="rtl" title="حراج سعودي يحتوي على حراج لكل السلع وحراج  
+ السيارات وحراج العقار وحراج الأجهزة تأسس عام 2008" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.jarir.com/" target="_blank"><img src="x/g3.png" dir="rtl" title="مكتبة جرير، ليست مجرد مكتبة" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.extra.com/" target="_blank"><img src="x/na/73.png" dir="rtl" title="تم تأسيس اكسترا في 2003 بواسطة الشركة المتحدة للإلكترونيات" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://shahid.mbc.net/" target="_blank"><img src="x/na/shahid.png" dir="rtl" title="شاهد" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.stctv.com" target="_blank"><img src="x/na/stctv.png" dir="rtl" title="stc tv" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://hawamer.com/vb" target="_blank" rel="nofollow"><img src="x/i17b.png"  width="80" height="40" border="0" dir="rtl" title="هوامير البورصة السعودية" /></a></td>
+    <td><a href="https://www.adslgate.com/dsl/" target="_blank" rel="nofollow"><img src="x/h2.png" dir="rtl" title="موقع البوابة الرقمية محتوى تقني لخدمات الإتصالات والهواتف 
+الذكية والألعاب وشاشات التلفزيون والسينما المنزلية والتجارة الإلكترونية" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.alrajhibank.com.sa" target="_blank" rel="nofollow"><img src="x/f1b.png" dir="rtl" title="مصرف الراجحي هو أكبر البنوك الإسلامية في العالم 
 
-            if (isNaN(weight) || weight <= 0) {
-                document.getElementById("result").innerHTML = "❌ أدخل وزنًا صحيحًا";
-                return;
-            }
+  يقدم خدمات ومنتجات وحلول تمويلة للأفراد والشركات" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://www.noon.com" target="_blank"><img src="x/g22.png" title="موقع إلكتروني للتسوق تأسست شركة  
+ نون للتجارة الإلكترونية في عام 2016" width="80" height="40" border="0" /></a></td>
+    <td><a href="https://s.click.aliexpress.com/e/_AekIN1" target="_blank"><img src="x/g12.png" width="80" height="40" border="0" /></a></td>
+    <td align="center" bordercolor="#000000"><a href="" class="menuanchorclass someotherclass" rel="anylinkmenu20[click]"><img src="x/g9.png" width="80" height="40" border="0" /></a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="931" border="0">
+  <tr>
+    <td width="100" align="center"><a href="" class="menuanchorclass someotherclass" rel="anylinkmenu19[click]" ><span class="style47">ᐊ </span>المزيد</a></td>
+    <td width="100" align="center"><a href="https://www.booking.com/country/th.ar.html?aid=1543796" target="_blank">تايلاند</a></td>
+    <td width="100" align="center"><a href="https://www.booking.com/city/eg/cairo.ar.html?aid=1543796;label=wedget" target="_blank">القاهرة</a></td>
+    <td width="100" align="center"><a href="https://www.booking.com/city/ae/dubai.ar.html?aid=1543796;label=wedget" target="_blank">دبي</a></td>
+    <td width="100" align="center"><a href="https://www.booking.com/city/sa/medina.ar.html?aid=1543796;label=wedget" target="_blank">المدينة</a></td>
+    <td width="100" align="center"><a href="https://www.booking.com/city/sa/jiddah.ar.html?aid=1543796;label=wedget" target="_blank">جدة</a></td>
+    <td width="100" align="center"><a href="https://www.booking.com/city/sa/mecca.ar.html?aid=1543796;label=wedget" target="_blank">مكة</a></td>
+    <td width="100" align="center"><a href="https://www.booking.com/city/sa/riyadh-sa.ar.html?aid=1543796;label=wedget" target="_blank">الرياض</a></td>
+    <td width="32" align="center" class="style45"><span class="style47">ᐊ</span></td>
+    <td width="100" align="center" class="style45"><a href="https://www.202020.net/booking.html" target="_blank">أفضل 10 فنادق</a></td>
+  </tr>
+  <tr>
+    <td colspan="10" align="center"><img src="images/ww2.png" width="933" height="5" border="0" /></td>
+  </tr>
+  
+  <tr> </tr>
+</table>
+<table width="1005" border="0" align="center">
+  <tr align="center">
+    <td width="86"><a href="https://www.stc.com.sa" title="شركة الاتصالات السعودية" target="_blank" rel="nofollow" dir="rtl">STC</a></td>
+    <td width="97"><a href="https://www.sa.zain.com" title="باقات وعروض الجوال والإنترنت | زين السعودية"
+      target="_blank" rel="nofollow" dir="rtl">zain</a></td>
+    <td width="74"><a href="https://e-services.qiyas.sa/Qiyas.TRAS.Web.Internet/" title="هيئة تقويم التعليم والتدريب" target="_blank" rel="nofollow" dir="rtl">قياس</a></td>
+    <td width="83"><a href="https://noor.moe.gov.sa/" title="نظام نور للإدارة التربوية - وزارة التعليم" target="_blank" rel="nofollow" dir="rtl">نور</a></td>
+    <td width="84"><a href="https://hrsd.gov.sa/" title="وزارة العمل و التنمية الاجتماعية" target="_blank" rel="nofollow" dir="rtl">العمل</a></td>
+    <td width="86"><a href="https://splonline.com.sa/ar/" title="مؤسسة البريد السعودي" target="_blank" rel="nofollow" dir="rtl">البريد</a></td>
+    <td width="90"><a href="https://www.gosi.gov.sa" title="المؤسسة العامة للتأمينات الإجتماعية" target="_blank" rel="nofollow" dir="rtl">التأمينات</a></td>
+    <td width="86"><a href="https://www.saudiexchange.sa/" title="السوق المالية السعودية تداول" target="_blank" rel="nofollow" dir="rtl">تداول</a></td>
+    <td width="90"><a href="https://www.saudia.com/" title="طيران الخطوط السعودية | أفضل عروض الأسعار والخدمات" target="_blank" rel="nofollow" dir="rtl">السعودية</a></td>
+    <td width="90"><a href="https://www.absher.sa/" title="أبشر - المنصة الرائدة في الخدمات الإلكترونية" target="_blank" rel="nofollow" dir="rtl">أبشر</a></td>
+    <td width="93"><a href="https://quran.ksu.edu.sa/index.php" title="تم تطوير هذا المشروع وبرنامج آيات في عمادة 
+التعاملات الالكترونية والاتصالات بجامعة الملك سعود" target="_blank" rel="nofollow" dir="rtl">القرآن الكريم</a></td>
+  </tr>
+  <tr align="center">
+    <td><a href="https://www.mobily.com.sa/wps/portal/web/personal" title="شركة اتحاد اتصالات (موبايلي) شركة سعودية تأسست في عام 2004" target="_blank" rel="nofollow" dir="rtl">mobily</a></td>
+    <td><a href="https://www.ca.gov.sa/" title="حساب المواطن" target="_blank" rel="nofollow" dir="rtl"> حساب المواطن </a></td>
+    <td><a href="https://balady.gov.sa/" target="_blank" title="بوابة بلدي
+تجديد رخصة نشاط تجاري
+إصدار رخصة نشاط تجاري
+إلغاء رخصة نشاط تجاري
+نقل ملكية رخصة نشاط تجاري
+استعلام عن رخصة باسم المحل
+استعلام عن رخصة بالموقع
+استعلام عن رخصة بالنشاط
+استعلام عن رخصة برقم الرخصة
+إصدار رخصة بناء
+إضافة و تعديل مكونات بناء
+تجديد رخصة إنشائية
+اصدار تقرير فني
+إفادة مناسبة موقع بناء" rel="nofollow" dir="rtl">بلدي</a></td>
+    <td><a href="https://sshr.moe.gov.sa/" title="نظام فارس للموارد البشرية - وزارة التعليم" target="_blank" rel="nofollow" dir="rtl">فارس</a></td>
+    <td><a href="https://www.doroob.sa/ar/" title="منصة وطنية للتدريب الإلكتروني، وهي إحدى مبادرات صندوق تنمية الموارد 
+  البشرية &quot;هدف&quot; التي تسعى إلى تطوير قدرات ورفع مهارات القوى الوطنية" target="_blank" rel="nofollow" dir="rtl"> دروب</a></td>
+    <td><a href="https://www.se.com.sa" title="الشركة السعودية للكهرباء" target="_blank" rel="nofollow" dir="rtl">الكهرباء</a></td>
+    <td><a href="https://ksavisa.sa/" title="إنجاز - خدمات التأشيرات الإلكترونية
+طلب الحصول على تأشيرة دخول للمملكة
+ من الممثليات السعودية بخارج المملكة
+استمارة طلب تأشيرة الحج والعمرة الإلكترونية
+دفع رسوم تأشيرة
+التفويض على تأشيرة
+البحث عن طلب مقدم
+التفويض على تأشيرة عمل (مُساند)
+دفع تكاليف الشهادة الصحية
+التأكد من اصدار الشهادة الصحية
+طلب خدمات الإلكترونية
+الدفع الإلكتروني لخدمات تصديق الوثائق" target="_blank" rel="nofollow" dir="rtl">التأشيرات</a></td>
+    <td><a href="https://zatca.gov.sa" title="هيئة الزكاة والضريبة والجمارك" target="_blank" rel="nofollow" dir="rtl">الزكاة والضريبة</a></td>
+    <td><a href="https://www.taqat.sa/" title="تجمع بين الباحثين عن العمل وأصحاب الأعمال 
+ وتتيح تقديم وتبادل خدمات التوظيف والتدريب" target="_blank" rel="nofollow" dir="rtl">طاقات</a></td>
+    <td><a href="https://www.iam.gov.sa/" title="النفاذ الوطني الموحد" target="_blank" rel="nofollow" dir="rtl">نفاذ</a></td>
+    <td><a href="https://www.kooora.com/?region=-1&area=0" title="مباريات اليوم" target="_blank">مباريات اليوم</a></td>
+  </tr>
+</table>
+<table width="949" border="0" align="center">
+    
+    <tr>
+      <td colspan="2" align="center"><img src="images/ww1.png" width="934" height="4" border="0" /></td>
+    </tr>
+  </table>
+  <table width="900" border="0" align="center">
+    <tr>
+      <td align="center"><a href="https://yandex.com/" target="_blank"><img src="x/na/yandex2.png" dir="rtl" title="ياندكس: محرك بحث روسي شهير" width="80" height="40" border="0" /></a></td>
+      <td align="center"><img src="x/line_a.png" width="5" height="5" border="0" /></td>
+      <td align="center"><a href="https://temu.to/m/ukkidft85lt" target="_blank"><img src="x/na/timu.png" width="80" height="40" border="0" /></a></td>
+      <td align="center"><img src="x/line_a.png" width="5" height="5" border="0" /></td>
+      <td align="center"><a href="https://najiz.sa/" target="_blank"><img src="x/na/84.png" dir="rtl" title="خدمات وزارة العدل 
+الوكالات وتفعيل وتعطيل وكالة 
+ القضايا ومواعيد الجلسات 
+ صكوك الإنهاءات والإثباتات 
+ العقارات المملوكه والمباعة 
+ الإنهاءات الصادرة وضبوط الجلسات 
+ التنفيذ للمنفذ أو المنفذ ضده 
+ الإعتراضات والإستفسارات على مستندات العدلية" width="80" height="40" border="0" /></a></td>
+      <td align="center"><img src="x/line_a.png" width="5" height="5" border="0" /></td>
+      <td align="center"><a href="https://www.virustotal.com/" target="_blank"><img src="x/na/virustotal1.png" dir="rtl" title="أداة فحص سلامة الروابط
+والملفات من الفيروسات" width="80" height="40" border="0" /></a></td>
+      <td align="center"><img src="x/line_a.png" width="5" height="5" border="0" /></td>
+      <td align="center"><a href="https://srem.moj.gov.sa/" target="_blank"><img src="x/na/srem.png" dir="rtl" title="مؤشر البورصة العقارية اليومي" width="80" height="40" border="0" /></a></td>
+      <td align="center"><img src="x/line_a.png" width="5" height="5" border="0" /></td>
+      <td align="center"><a href="https://vi.vsafety.sa/" target="_blank"><img src="x/na/vsafety.png" dir="rtl" title="خدمة الفحص الفني الدوري 
+ مركز سلامة المركبات" width="80" height="40" border="0" /></a></td>
+      <td align="center"><img src="x/line_a.png" width="5" height="5" border="0" /></td>
+      <td align="center"><a href="https://business.sa/" target="_blank"><img src="x/na/business_sa.png" dir="rtl" title="المركز السعودي للاعمال" width="80" height="40" border="0" /></a></td>
+      <td align="center"><img src="x/line_a.png" width="5" height="5" border="0" /></td>
+      <td align="center"><a href="https://salam.sa/" target="_blank"><img src="x/na/salam.png" dir="rtl" title="سلام للاتصالات وحلول 
+تكنولوجيا المعلومات والاتصالات" width="80" height="40" border="0" /></a></td>
+      <td width="3" align="center"><img src="x/line_a.png" width="5" height="5" border="0" /></td>
+      <td width="90" align="center"><a href="https://ksavisa.sa/" target="_blank"><img src="x/na/ksa_visa.png" dir="rtl" title="منصة التأشيرات" width="80" height="40" border="0" /></a></td>
+      <td width="90" align="center"><img src="x/na/new_added_2.png" width="121" height="30" border="0" /></td>
+    </tr>
+  </table>
+  <table width="940" border="0">
+    <tr>
+      <td width="934" align="center"><img src="images/ww1.png" width="934" height="4" border="0" /></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="200" border="0" align="center">
+  <tr>
+    <td valign="middle"><img src="x/na/one.png" width="40" height="80" border="0" /></td>
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_1" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x1.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x2.htm" rel="countrycontainer">2030</a></li>
+      </ul>
+    </div>
+        <div id="tab1_1divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b11a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://sabq.org/" target="_blank" rel="nofollow"><img src="x/a1.png" dir="rtl" title="صحيفة سعودية تأسست عام 2007م 
+وحاصلة على ترخيص رسمي
+ من وزارة الثقافة والإعلام" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://ajel.sa/" target="_blank" rel="nofollow"><img src="x/a2a.png" dir="rtl" title="صحيفة إلكترونية سعودية تم تأسيسها عام 2007" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
 
-            let doseText = "";
-            if (med === "paracetamol") {
-                let min = weight * 10;
-                let max = weight * 15;
-                let maxDaily = weight * 75;
-                doseText = `الجرعة: من ${min.toFixed(1)} إلى ${max.toFixed(1)} ملغ كل 4–6 ساعات.<br>الحد الأقصى اليومي: ${maxDaily.toFixed(1)} ملغ.`;
-            } else if (med === "ibuprofen") {
-                let min = weight * 5;
-                let max = weight * 10;
-                let maxDaily = weight * 40;
-                doseText = `الجرعة: من ${min.toFixed(1)} إلى ${max.toFixed(1)} ملغ كل 6–8 ساعات.<br>الحد الأقصى اليومي: ${maxDaily.toFixed(1)} ملغ.`;
-            } else if (med === "amoxicillin") {
-                let min = weight * 25;
-                let max = weight * 50;
-                doseText = `الجرعة اليومية: من ${min.toFixed(1)} إلى ${max.toFixed(1)} ملغ يوميًا مقسمة على 2–3 جرعات.`;
-            } else if (med === "augmentin") {
-                let min = weight * 20;
-                let max = weight * 40;
-                doseText = `الجرعة اليومية (amoxicillin): من ${min.toFixed(1)} إلى ${max.toFixed(1)} ملغ يوميًا مقسمة على جرعتين.`;
-            } else if (med === "azithromycin") {
-                let firstDay = weight * 10;
-                let otherDays = weight * 5;
-                doseText = `اليوم الأول: ${firstDay.toFixed(1)} ملغ<br>الأيام التالية: ${otherDays.toFixed(1)} ملغ يوميًا لمدة 3–5 أيام.`;
-            } else if (med === "clarithromycin") {
-                let dose = weight * 7.5;
-                doseText = `الجرعة: ${dose.toFixed(1)} ملغ كل 12 ساعة (مرتين في اليوم). الحد الأقصى: 500 ملغ لكل جرعة.`;
-            } else if (med === "ceftriaxone") {
-                let min = weight * 50;
-                let max = weight * 100;
-                doseText = `الجرعة اليومية: ${min.toFixed(1)} إلى ${max.toFixed(1)} ملغ IV أو IM. الحد الأقصى: 4 جم يوميًا.`;
-            } else if (med === "salbutamol_neb") {
-                let dose = weight * 0.15;
-                doseText = `الجرعة: ${dose.toFixed(2)} ملغ (نيبولايزر). الحد الأقصى: 5 ملغ لكل جرعة.`;
-            } else if (med === "salbutamol_syrup") {
-                let min = weight * 0.1;
-                let max = weight * 0.2;
-                doseText = `الجرعة: من ${min.toFixed(2)} إلى ${max.toFixed(2)} ملغ كل 8 ساعات. الحد الأقصى اليومي: 2 ملغ/كغ.`;
-            }
+              <td align="center"><a href="https://www.almowaten.net/" target="_blank" rel="nofollow"><img src="x/a3.png" dir="rtl" title="صحيفة إلكترونية سعودية تم تأسيسها عام 2013" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.slaati.com/" target="_blank" rel="nofollow"><img src="x/a4.png" dir="rtl" title="أخبار محلية سعودية وعربية ودولية إقتصادية  &#10; وإجتماعية ومال واعمال ورياضة وشئون المرأة" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.akhbaar24.com/" target="_blank" rel="nofollow"><img src="x/a9a.png" dir="rtl" title="يهتم موقع أخبار 24 بالأخبار والأحداث التي تهم  
+ المواطن والمتابع السعودي سواء كانت محلية أو خارجية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://al-marsd.com/" target="_blank" rel="nofollow"><img src="x/a5.png" dir="rtl" title="تصدر عن مؤسسة المرصد للنشر الإلكتروني تأسست عام 2009" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+      </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
 
-            document.getElementById("result").innerHTML = "<strong>📋 النتيجة:</strong><br>" + doseText;
-        }
-    </script>
+
+
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+
+
+
+var tab1_1=new ddajaxtabs("tab1_1", "tab1_1divcontainer")
+
+
+
+tab1_1.setpersist(true)
+
+
+
+tab1_1.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_1.init()
+
+
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+
+
+
+
+</script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_2" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x3.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x4.htm" rel="countrycontainer">3</a></li>
+      </ul>
+    </div>
+        <div id="tab1_2divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b10a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.alriyadh.com/" target="_blank"><img src="x/b1.png" dir="rtl" title="النسخة الإلكترونية من صحيفة الرياض  &#10; اليومية الصادرة عن مؤسسة اليمامة الصحفية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.okaz.com.sa/" target="_blank" rel="nofollow"><img src="x/na/74.png" dir="rtl" title="صحيفة تصدر عن مؤسسة عكاظ للصحافة والنشر" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.al-madina.com/" target="_blank" rel="nofollow"><img src="x/b8.png" dir="rtl" title="صحيفة المدينة السعودية الصادرة عن  &#10; مؤسسة المدينة للصحافة والطباعة والنشر" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.al-jazirah.com/" target="_blank" rel="nofollow"><img src="x/b6.png" dir="rtl" title="الجزيرة صحيفة سعودية يومية تصدر عن  &#10; مؤسسة الجزيرة للصحافة والطباعة والنشر" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://aawsat.com/" target="_blank" rel="nofollow"><img src="x/b7.png" dir="rtl" title="جريدة العرب الدولية الشرق الأوسط" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.alwatan.com.sa/" target="_blank" rel="nofollow"><img src="x/b3.png" dir="rtl" title="صحيفة الوطن السعودية تصدر  &#10; عن مؤسسة عسير للصحافة والنشر" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_2=new ddajaxtabs("tab1_2", "tab1_2divcontainer")
+
+
+
+tab1_2.setpersist(true)
+
+
+
+tab1_2.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_2.init()
+
+
+
+
+
+
+
+</script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_3" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x5.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x6.htm" rel="countrycontainer">3</a></li>
+      </ul>
+    </div>
+        <div id="tab1_3divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b9a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.alarabiya.net/" target="_blank" rel="nofollow"><img src="x/c1.png" dir="rtl" title="العربية #أن_تعرف_أكثر" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.spa.gov.sa/" target="_blank" rel="nofollow"><img src="x/c5.png" dir="rtl" title="وكالة الأنباء السعودية (واس) تأسست عام 1971م" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.independentarabia.com/" target="_blank" rel="nofollow"><img src="x/a2b.png" dir="rtl" title="صحيفة الإندبندنت عربية هي أول صحيفة تمتلك حقوق النشر  &#10; باللغة العربية لصحيفة عالمية هي الإندبندنت البريطانية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://arabic.cnn.com/" target="_blank" rel="nofollow"><img src="x/c4a.png" dir="rtl" title="CNN Arabic" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://arabic.rt.com/" target="_blank" rel="nofollow"><img src="x/c23.png" dir="rtl" title="آر تي المعروفة سابقاً باسم روسيا اليوم" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.skynewsarabia.com/" target="_blank" rel="nofollow"><img src="x/c2a.png" dir="rtl" title="سكاي نيوز عربية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+      </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+        <!-- 202020.net نسخة خاصة لموقع -->
+
+
+var tab1_3=new ddajaxtabs("tab1_3", "tab1_3divcontainer")
+
+
+
+tab1_3.setpersist(true)
+
+
+
+tab1_3.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_3.init()
+
+
+
+
+
+
+
+</script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_4" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x7.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x8.htm" rel="countrycontainer">3</a></li>
+      </ul>
+    </div>
+        <div id="tab1_4divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b1a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><img src="x/d1.png" dir="rtl" title="YouTube" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><img src="x/d2.png" dir="rtl" title="Facebook" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://x.com/" target="_blank" rel="nofollow"><img src="x/na/x.png" dir="rtl" title="twitter.com" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.instagram.com/" target="_blank" rel="nofollow"><img src="x/d6.png" dir="rtl" title="Instagram" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://web.whatsapp.com/" target="_blank" rel="nofollow"><img src="x/d7.png" dir="rtl" title="WhatsApp" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.tiktok.com" target="_blank"><img src="x/na/161.png" title="" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+      </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_4=new ddajaxtabs("tab1_4", "tab1_4divcontainer")
+
+
+
+tab1_4.setpersist(true)
+
+
+
+tab1_4.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_4.init()
+
+
+
+
+
+
+
+</script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_5" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x9.htm" rel="countrycontainer"> 2</a></li>
+        <li><a href="tab_files/x10a.htm" rel="countrycontainer">هيئات</a></li>
+        <li><a href="tab_files/x10.htm" rel="countrycontainer">صور</a></li>
+      </ul>
+    </div>
+        <div id="tab1_5divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b7a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://mail.google.com/" target="_blank" rel="nofollow"><img src="x/e1.png" dir="rtl" title="Gmail - Google" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://mail.yahoo.com" target="_blank" rel="nofollow"><img src="x/e2.png" dir="rtl" title="بريد ياهو" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://outlook.live.com" target="_blank" rel="nofollow"><img src="x/e3.png" dir="rtl" title="بريد إلكتروني، تقويم، ودفتر عناوين، ومدون ملاحظات" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.icloud.com/" target="_blank"><img src="x/e6.png" dir="rtl" title="خدمة حوسبة سحابية أطلقتها شركة أبل عبر الإنترنت في 2011" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.zoho.com/ar/mail" target="_blank"><img src="x/na/35.png" dir="rtl" title="قم باستضافة رسائل البريد الإلكتروني لنشاطك التجاري  &#10; بطريقة آمنة ومشفرة ومضمونة للخصوصية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://protonmail.com/" target="_blank"><img src="x/na/58.png" dir="rtl" title=" أكبر خدمة بريد إلكتروني آمنة في العالم
+ومحمية بموجب قانون الخصوصية السويسري" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+      </div></td>
+    <td rowspan="2" valign="top">&nbsp;</td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_5=new ddajaxtabs("tab1_5", "tab1_5divcontainer")
+
+
+
+tab1_5.setpersist(true)
+
+
+
+tab1_5.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_5.init()
+
+
+
+
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+
+
+</script>
+    <!--**************************************************************************-->
+  </tr>
+  <tr>
+    <td valign="middle"><img src="x/na/two.png" width="40" height="80" border="0" /></td>
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_6" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x11.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x12.htm" rel="countrycontainer">3</a></li>
+      </ul>
+    </div>
+        <div id="tab1_6divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b2a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.booking.com/index.ar.html?aid=1543796" target="_blank"><img src="x/na/63.png" dir="rtl" title="Booking.com" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.agoda.com" target="_blank"><img src="x/k25.png" dir="rtl" title="فنادق، منتجعات، بيوت شباب، وأكثر" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://ar.hotels.com/" target="_blank"><img src="x/na/39.png" dir="rtl" title="موقع رائد لتوفير أماكن الإقامة عبر الإنترنت" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.airbnb.com" target="_blank"><img src="x/k33.png" dir="rtl" title="تأجير منزلك، أو شقتك، أو غرفتك" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.almosafer.com/ar" target="_blank" rel="nofollow"><img src="x/k8.png" dir="rtl" title="المسافر هي شركة سعودية رائدة لحجوزات الفنادق، الطيران والعطلات" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.flyin.com/" target="_blank" rel="nofollow"><img src="x/k14.png" dir="rtl" title="طيران وفنادق في مكان واحد‎" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_6=new ddajaxtabs("tab1_6", "tab1_6divcontainer")
+
+
+
+tab1_6.setpersist(true)
+
+
+
+tab1_6.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_6.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_7" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x13.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x14.htm" rel="countrycontainer">3</a></li>
+      </ul>
+    </div>
+        <div id="tab1_7divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b4a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.saudia.com/" target="_blank" rel="nofollow"><img src="x/na/saudia_new_logo.png" dir="rtl" title="طيران الخطوط السعودية | أفضل عروض الأسعار والخدمات" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.flynas.com/ar" target="_blank" rel="nofollow"><img src="x/k2a.png" dir="rtl" title="طيران ناس هي شركة طيران سعودية خاصة، تعمل  
+ بنظام الطيران منخفض التكلفة تأسست عام 2007" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.almosafer.com/ar" target="_blank" rel="nofollow"><img src="x/k8.png" title="المسافر هي شركة سعودية رائدة لحجوزات الفنادق، الطيران والعطلات" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.flyadeal.com/ar/" target="_blank" rel="nofollow"><img src="x/k4.png" dir="rtl" title="تأسست شركة «طيران أديل» عام 2017 لتلبية الطلب المتزايد على السفر الجوي بأسعار اقتصادية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://sa.wego.com/" target="_blank"><img src="x/wego.png" dir="rtl" title="محرك بحث للفنادق والرحلات الجوية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.skyscanner.com.sa/" target="_blank"><img src="x/k30a.png" dir="rtl" title="محرك بحث للرحلات الجوية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+
+
+var tab1_7=new ddajaxtabs("tab1_7", "tab1_7divcontainer")
+
+
+
+tab1_7.setpersist(true)
+
+
+
+tab1_7.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+
+tab1_7.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_8" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x15.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x16.htm" rel="countrycontainer">3</a></li>
+        <li><a href="tab_files/x16a.htm" rel="countrycontainer">4</a></li>
+      </ul>
+    </div>
+        <div id="tab1_8divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b3a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://haraj.com.sa" target="_blank" rel="nofollow"><img src="x/g1.png" dir="rtl" title="حراج سعودي يحتوي على حراج لكل السلع وحراج  
+ السيارات وحراج العقار وحراج الأجهزة تأسس عام 2008" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.amazon.sa" target="_blank" rel="nofollow"><img src="x/g9.png" dir="rtl" title="أمازون السعودية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.jarir.com/" target="_blank"><img src="x/g3.png" dir="rtl" title="مكتبة جرير، ليست مجرد مكتبة" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.extra.com/" target="_blank"><img src="x/na/73.png" dir="rtl" title="تم تأسيس اكسترا في 2003 بواسطة الشركة المتحدة للإلكترونيات" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://s.click.aliexpress.com/e/_AekIN1" target="_blank"><img src="x/g12.png" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.noon.com" target="_blank"><img src="x/g22.png" title="موقع إلكتروني للتسوق تأسست شركة  
+ نون للتجارة الإلكترونية في عام 2016" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_8=new ddajaxtabs("tab1_8", "tab1_8divcontainer")
+
+
+
+tab1_8.setpersist(true)
+
+
+
+tab1_8.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_8.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+
+   <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_13" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x17.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x18.htm" rel="countrycontainer">عن بعد</a></li>
+      </ul>
+    </div>
+        <div id="tab1_13divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b5a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.stc.com.sa" target="_blank"><img src="x/na/32.png" dir="rtl" title="شركة الاتصالات السعودية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.sa.zain.com/" target="_blank"><img src="x/o5.png" dir="rtl" title="باقات وعروض الجوال والإنترنت | زين السعودية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.mobily.com.sa/wps/portal/web/personal" target="_blank"><img src="x/o6.png" dir="rtl" title="شركة اتحاد اتصالات (موبايلي) شركة سعودية تأسست في عام 2004" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.jawwy.sa/ar" target="_blank"><img src="x/na/36.png" dir="rtl" title="جوّي هي باقة جوال من شركة الاتصالات السعودية، مقدمة على منصة رقمية  &#10; بواسطة تطبيق يعطيك المجال إنك تغّير وتعدل مثل ما تحب ومتى ما بغيت" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://salam.sa/" target="_blank"><img src="x/na/salam.png" dir="rtl" title="سلام للاتصالات وحلول 
+تكنولوجيا المعلومات والاتصالات" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.citc.gov.sa/en/Pages/default.aspx" target="_blank"><img src="x/na/38.png" dir="rtl" title="هيئة الاتصالات وتقنية المعلومات" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+
+var tab1_13=new ddajaxtabs("tab1_13", "tab1_13divcontainer")
+
+
+
+tab1_13.setpersist(true)
+
+
+
+tab1_13.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+
+tab1_13.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_12" class="shadetabs" >
+
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x19.htm" rel="countrycontainer">2</a></li>
+        <li><a href="tab_files/x20.htm" rel="countrycontainer">3</a></li>
+        <li><a href="tab_files/x52.htm" rel="countrycontainer">4</a></li>
+      </ul>
+    </div>
+        <div id="tab1_12divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b6a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.iam.gov.sa/" target="_blank" rel="nofollow"><img src="x/o33.png" dir="rtl" title="النفاذ الوطني الموحد" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.absher.sa/" target="_blank"><img src="x/o1.png" dir="rtl" title="أبشر  
+الأحوال المدنية  
+المرور  
+الجوازات  
+المقيمون
+إمارات المناطق  
+ الاعتراض على 
+المخالفات المرورية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.ejar.sa/" target="_blank"><img src="x/na/23.png" dir="rtl" title="إيجار : شبكة إلكترونية لتنظيم قطاع الإيجار العقاري
+ في المملكة وحفظ حقوق أطراف العملية الإيجارية
+ المستأجر، المؤجر، الوسيط العقاري" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://najiz.sa/" target="_blank"><img src="x/na/84.png" dir="rtl" title="خدمات وزارة العدل 
+الوكالات وتفعيل وتعطيل وكالة 
+ القضايا ومواعيد الجلسات 
+ صكوك الإنهاءات والإثباتات 
+ العقارات المملوكه والمباعة 
+ الإنهاءات الصادرة وضبوط الجلسات 
+ التنفيذ للمنفذ أو المنفذ ضده 
+ الإعتراضات والإستفسارات على مستندات العدلية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://balady.gov.sa/" target="_blank"><img src="x/na/88.png" dir="rtl" title="بوابة بلدي
+تجديد رخصة نشاط تجاري
+إصدار رخصة نشاط تجاري
+إلغاء رخصة نشاط تجاري
+نقل ملكية رخصة نشاط تجاري
+استعلام عن رخصة باسم المحل
+استعلام عن رخصة بالموقع
+استعلام عن رخصة بالنشاط
+استعلام عن رخصة برقم الرخصة
+إصدار رخصة بناء
+إضافة و تعديل مكونات بناء
+تجديد رخصة إنشائية
+اصدار تقرير فني
+إفادة مناسبة موقع بناء" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.saudiexchange.sa/" target="_blank" rel="nofollow"><img src="x/n1.png" dir="rtl" title="السوق المالية السعودية تداول" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>        
+          <!-- 202020.net  -->
+        </div></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+var tab1_12=new ddajaxtabs("tab1_12", "tab1_12divcontainer")
+tab1_12.setpersist(true)
+tab1_12.setselectedClassTarget("link") //"link" or "linkparent"
+tab1_12.init()
+
+  </script>
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+  </tr>
+ 
+  <tr>
+    <td valign="middle"><img src="x/na/three.png" width="40" height="80" border="0" /></td>
+    <td valign="top"><div align="center">
+        <ul id="tab1_16" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x35.htm" rel="countrycontainer">2</a></li>
+          <li><a href="tab_files/x36.htm" rel="countrycontainer">3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_16divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b19a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.linkedin.com/learning" target="_blank"><img src="x/na/inl.png" dir="rtl" title="منصة تعليمية شهيرة كانت تسمى سابقا ليندا" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.udemy.com/" target="_blank"><img src="x/j16.png" dir="rtl" title="انضم إلى أكثر من 30 مليون شخص يتعلمون مهارات جديدة  
+ عبر الإنترنت مع تصفح اكثر من ١٠٠،٠٠ دورة تدريبية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.edraak.org/" target="_blank"><img src="x/na/69.png" dir="rtl" title="إدراك | دورات مجانيّة باللّغة العربيّة عبر الإنترنت" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.rwaq.org/" target="_blank"><img src="x/j22.png" dir="rtl" title="رواق - المنصة العربية للتعليم المفتوح" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.doroob.sa/ar/" target="_blank"><img src="x/o7.png" dir="rtl" title="منصة وطنية للتدريب الإلكتروني، وهي إحدى مبادرات صندوق تنمية الموارد 
+  البشرية &quot;هدف&quot; التي تسعى إلى تطوير قدرات ورفع مهارات القوى الوطنية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://ethrai.sa/" target="_blank"><img src="x/na/ethrai.png" dir="rtl" title="ثرائي هي مِنصة عربية إلِكترونية تهدف 
+إلى رفع كفاءة رأس المال البشري من خلال
+ تمكينهم من تطوير مهاراتهم وزيادة معارفهم" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr></tr>
+          </table>
+        </div></td>
+    <!--*********************************************-->
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <td valign="top"><div align="center">
+        <ul id="tab1_17" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x33.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x34.htm" rel="countrycontainer"> 3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_17divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b18a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://noor.moe.gov.sa" target="_blank"><img src="x/j1.png" dir="rtl" title="نظام نور للإدارة التربوية - وزارة التعليم" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://sshr.moe.gov.sa" target="_blank" rel="nofollow"><img src="x/j2.png" dir="rtl" title="نظام فارس للموارد البشرية - وزارة التعليم" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://ien.edu.sa/" target="_blank"><img src="x/j10.png" dir="rtl" title="" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://schools.madrasati.sa/" target="_blank"><img src="x/na/med.png" dir="rtl" title="" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://tawasul.moe.gov.sa/" target="_blank"><img src="x/na/tawasul.png" dir="rtl" title="" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://learn.classera.com/" target="_blank"><img src="x/na/2.png" dir="rtl" title="كلاسيرا
+نظام إدارة حضور الطالب
+نظام إدارة سلوكيات الطالب
+نظام إدارة معلومات الطالب
+نظام إدارة المحتوى التعليمي
+نظام إدارة الدرجات و السجل الدراسي
+إدارة قسم المالية
+التعلم عن بعد - الفصول الإفتراضية
+التعلم الجماعي" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_11=new ddajaxtabs("tab1_11", "tab1_11divcontainer")
+
+
+
+
+tab1_11.setpersist(true)
+
+
+
+tab1_11.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_11.init()
+
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+  <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_10=new ddajaxtabs("tab1_10", "tab1_10divcontainer")
+
+
+
+tab1_10.setpersist(true)
+
+
+
+tab1_10.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_10.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+      <ul id="tab1_9" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x25.htm" rel="countrycontainer"> 2</a></li>
+        <li><a href="tab_files/x26.htm" rel="countrycontainer">3</a></li>
+      </ul>
+    </div>
+        <div id="tab1_9divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b14a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://zid.sa" target="_blank"><img src="x/na/4a.png" dir="rtl" title="زد : أنشئ متجرك الإلكتروني في دقائق وبدون الحاجة لأي خبرة" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://salla.sa" target="_blank"><img src="x/na/20.png" dir="rtl" title="سلة : جميع الأدوات التي تحتاجها لبناء متجر إلكتروني ناجح" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://maroof.sa/" target="_blank"><img src="x/na/28.png" dir="rtl" title="معروف : أفضل وسيلة لبحث وتقييم المتاجر 
+الإلكترونية في المملكة العربية السعودية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://freelance.sa/" target="_blank"><img src="x/na/80.png" dir="rtl" title="أصدر وثيقة العمل الحر لتوثيق أعمالك و الاستفادة من المميزات والخدمات" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.paypal.com/" target="_blank"><img src="x/g13.png" dir="rtl" title="الطريقة الأسرع والأكثر أماناً لإرسال وتلقي المدفوعات عبر الإنترنت" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.paytabs.com/ar/" target="_blank"><img src="x/na/31.png" dir="rtl" title="بوابة دفع بسيطة يمكن دمجها بسرعة في مواقع التجارة" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>        
+    <!-- 202020.net  -->
+
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_9=new ddajaxtabs("tab1_9", "tab1_9divcontainer")
+
+
+
+tab1_9.setpersist(true)
+
+
+
+tab1_9.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_9.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+      <td valign="top"><div align="center">
+      <ul id="tab1_14" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x27.htm" rel="countrycontainer"> 2</a></li>
+        <li><a href="tab_files/x28.htm" rel="countrycontainer">3</a></li>
+        <li><a href="tab_files/x54.htm" rel="countrycontainer">فوترة</a></li>
+      </ul>
+    </div>
+        <div id="tab1_14divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b15a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.saudiexchange.sa/" target="_blank" rel="nofollow"><img src="x/n1.png" dir="rtl" title="السوق المالية السعودية تداول" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.argaam.com/" target="_blank" rel="nofollow"><img src="x/n2.png" dir="rtl" title="ارقام : اخبار ومعلومات سوق الأسهم السعودي - تاسي" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://qiwa.sa/" target="_blank"><img src="x/na/46.png" dir="rtl" title="منصة قوى : منصة الكترونية لتوفير حلول و خدمات وزارة العمل  
+ والتنمية الاجتماعية للإرتقاء بالخدمات الالكترونية المقدمة لقطاع العمل" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://muqeem.sa/" target="_blank"><img src="x/na/109.png" dir="rtl" title="​​​​​تتيح خدمة «مقيم» للمنشآت
+إصدار، أو إلغاء، أو إعادة طباعة 
+تأشيرة الخروج والعودة، أو الخروج النهائي
+إصدار، أو تجديد الإقامة
+استعراض وطباعة تقارير الجوازات
+نقل خدمات
+تعديل المهنة
+طباعة الإقامات" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://balady.gov.sa/" target="_blank"><img src="x/na/88.png" dir="rtl" title="بوابة بلدي
+تجديد رخصة نشاط تجاري
+إصدار رخصة نشاط تجاري
+إلغاء رخصة نشاط تجاري
+نقل ملكية رخصة نشاط تجاري
+استعلام عن رخصة باسم المحل
+استعلام عن رخصة بالموقع
+استعلام عن رخصة بالنشاط
+استعلام عن رخصة برقم الرخصة
+إصدار رخصة بناء
+إضافة و تعديل مكونات بناء
+تجديد رخصة إنشائية
+اصدار تقرير فني
+إفادة مناسبة موقع بناء" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://furas.momra.gov.sa/" target="_blank"><img src="x/na/204.png" dir="rtl" title="بوابة الاستثمار البلدي - فرص" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_14=new ddajaxtabs("tab1_14", "tab1_14divcontainer")
+
+
+
+tab1_14.setpersist(true)
+
+
+
+tab1_14.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_14.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+        <td valign="top"><div align="center">
+      <ul id="tab1_15" class="shadetabs" >
+        <li><a href="#" rel="#default" class="selected"> 1</a></li>
+        <li><a href="tab_files/x29.htm" rel="countrycontainer"> 2</a></li>
+        <li><a href="tab_files/x30.htm" rel="countrycontainer">3</a></li>
+      </ul>
+    </div>
+        <div id="tab1_15divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b16a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.alrajhibank.com.sa" target="_blank" rel="nofollow"><img src="x/f1b.png" dir="rtl" title="مصرف الراجحي هو أكبر البنوك الإسلامية في العالم 
+
+  يقدم خدمات ومنتجات وحلول تمويلة للأفراد والشركات" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.alahli.com" target="_blank" rel="nofollow"><img src="x/f2a.png" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+
+              <td align="center"><a href="https://www.anb.com.sa" target="_blank" rel="nofollow"><img src="x/na/anb.png" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.riyadbank.com" target="_blank" rel="nofollow"><img src="x/na/rb2.png" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.alinma.com/" target="_blank"><img src="x/f11.png" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.bankalbilad.com" target="_blank" rel="nofollow"><img src="x/f6.png" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div></td>
+        <td valign="top">&nbsp;</td>
+      <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+
+
+
+
+var tab1_15=new ddajaxtabs("tab1_15", "tab1_15divcontainer")
+
+
+
+tab1_15.setpersist(true)
+
+
+
+tab1_15.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_15.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+  </tr>
+  
+  <tr>
+    <td valign="middle">&nbsp;</td>
+    <td colspan="9" align="center" valign="middle">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="middle">&nbsp;</td>
+    <td colspan="9" align="center" valign="middle"><img src="images/ww2.png" width="933" height="5" border="0" /></td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="middle">&nbsp;</td>
+    <td colspan="9" align="center" valign="top"><img src="x/blank.gif" width="80" height="10" border="0" /></td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="middle"><img src="x/na/four.png" width="40" height="80" border="0" /></td>
+    <td valign="top"><div align="center">
+        <ul id="tab1_11" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x21.htm" rel="countrycontainer">2</a></li>
+          <li><a href="tab_files/x22.htm" rel="countrycontainer">3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_11divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b12a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://sa.aqar.fm/" target="_blank"><img src="x/na/19a.png" dir="rtl" title="شقق للإيجار وأراضي للبيع | تطبيق عقار" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.ejar.sa/" target="_blank"><img src="x/na/23.png" dir="rtl" title="إيجار : شبكة إلكترونية لتنظيم قطاع الإيجار العقاري
+ في المملكة وحفظ حقوق أطراف العملية الإيجارية
+ المستأجر، المؤجر، الوسيط العقاري" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.zaahib.com/" target="_blank"><img src="x/na/26.png" dir="rtl" title="البحث عن العقارات وعرض تفاصيلها، اضافة العقارات الخاصة" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://srem.moj.gov.sa/" target="_blank"><img src="x/na/srem.png" dir="rtl" title="مؤشر البورصة العقارية اليومي" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://sakani.sa/" target="_blank"><img src="x/na/sakani.png" dir="rtl" title="هنا نستعرض لكم مايستجد من تحديثات سكنية في مختلف مناطق المملكة" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.propertyfinder.sa/" target="_blank"><img src="x/na/40.png" dir="rtl" title="بروبرتي فايندر موقع العقارات الرائد في السعودية. الرياض - جدة" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <!--*********************************************-->
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <td valign="top"><div align="center">
+        <ul id="tab1_10" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x23.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x24.htm" rel="countrycontainer"> 3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_10divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b13a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://splonline.com.sa/ar/" target="_blank"><img src="x/o10a.png" dir="rtl" title="مؤسسة البريد السعودي" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.aramex.com/" target="_blank"><img src="x/p1.png" dir="rtl" title="خدمات النقل السريع من أرامكس هي 
+اختيارك الأمثل لحلول الشحن في
+ جميع أنحاء العالم بأسعار تنافسية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.shopandship.com/" target="_blank"><img src="x/p3.png" dir="rtl" title="شوب آند شيب هي خدمة مقدمة من 
+أرامكس، تقوم بنقل و توصيل للشحنات الدولية
+التي قمت بشرائها من المتاجر عبر الإنترنت" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.naqelexpress.com/" target="_blank"><img src="x/na/65a.png" dir="rtl" title="شركة ناقل" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.smsaexpress.com/" target="_blank"><img src="x/p4.png" dir="rtl" title="سمسا إكسبريس الشركة 
+الرائدة في مجال النقل السريع" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.fedex.com/sa" target="_blank"><img src="x/p5.png" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_16=new ddajaxtabs("tab1_16", "tab1_16divcontainer")
+
+
+
+tab1_16.setpersist(true)
+
+
+
+tab1_16.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_16.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_17=new ddajaxtabs("tab1_17", "tab1_17divcontainer")
+
+
+
+tab1_17.setpersist(true)
+
+
+
+tab1_17.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_17.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+        <ul id="tab1_18" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x31.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x32.htm" rel="countrycontainer"> 3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_18divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b17a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.kooora.com/" target="_blank" rel="nofollow"><img src="x/r1.png" dir="rtl" title="كووورة: الموقع العربي الرياضي الأول" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://arriyadiyah.com/" target="_blank" rel="nofollow"><img src="x/b13.png" dir="rtl" title="صحيفة الرياضية متخصصة في متابعة 
+
+  أهم أخبار الكرة السعودية والعالمية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.yallakora.com/" target="_blank" rel="nofollow"><img src="x/e8a.png" dir="rtl" title="يلاكورة الموقع الرياضى الأول فى الشرق الأوسط" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.filgoal.com/" target="_blank" rel="nofollow"><img src="x/r2.png" dir="rtl" title="الموقع الرياضى الرائد فى مصر و الوطن العربى" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://shoota.yalla-shootc.com/" target="_blank" rel="nofollow"><img src="x/na/yalla_shootc.png" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.btolat.com/" target="_blank"><img src="x/na/8a.png" dir="rtl" title="بطولات" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <!-- 202020.net  -->
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_18=new ddajaxtabs("tab1_18", "tab1_18divcontainer")
+
+
+
+tab1_18.setpersist(true)
+
+
+
+tab1_18.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_18.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+        <ul id="tab1_19" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x37.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x38.htm" rel="countrycontainer">3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_19divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b20a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://ae.godaddy.com/" target="_blank"><img src="x/s7.png" dir="rtl" title="تسجيل أسماء النطاقات ، استضافة المواقع" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://nic.sa/" target="_blank"><img src="x/na/104.png" title="المركز السعودي لمعلومات الشبكة جهة غير ربحية مختصة بتسجيل 
+أسماء النطاقات السعودية في المملكة العربية السعودية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.bluehost.com/" target="_blank"><img src="x/s1.png" dir="rtl" title="استضافة موقعك الإلكتروني" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.hostgator.com/" target="_blank"><img src="x/s2a.png" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.networksolutions.com/" target="_blank"><img src="x/s8.png" dir="rtl" title="" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.cloudflare.com/" target="_blank"><img src="x/s5.png" dir="rtl" title="" width="80" height="40" border="0" /></a></td>
+            </tr>
+            
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_19=new ddajaxtabs("tab1_19", "tab1_19divcontainer")
+
+
+
+tab1_19.setpersist(true)
+
+
+
+tab1_19.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_19.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+        <ul id="tab1_20" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x39.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x40.htm" rel="countrycontainer">3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_20divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b21a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.traidnt.com/" target="_blank" rel="nofollow"><img src="x/h1.png" dir="rtl" title="مجموعة ترايدنت العربية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.adslgate.com/dsl/" target="_blank" rel="nofollow"><img src="x/h2.png" dir="rtl" title="موقع البوابة الرقمية محتوى تقني لخدمات الإتصالات والهواتف 
+الذكية والألعاب وشاشات التلفزيون والسينما المنزلية والتجارة الإلكترونية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.unlimit-tech.com/" target="_blank"><img src="x/h8.png" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.tech-wd.com/wd/" target="_blank"><img src="x/h7.png" dir="rtl" title="عالم التقنية - أخبار التقنية بين يديك" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.elm.sa" target="_blank" rel="nofollow"><img src="x/h6.png" dir="rtl" title="شركة رائده في مجال ابتكار الحلول وتطوير الخدمات وتحسين الإجراءات" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://aitnews.com/" target="_blank"><img src="x/h9.png" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="top">&nbsp;</td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+
+
+
+
+var tab1_20=new ddajaxtabs("tab1_20", "tab1_20divcontainer")
+
+
+
+tab1_20.setpersist(true)
+
+
+
+tab1_20.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_20.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+  </tr>
+  <tr>
+    <td valign="middle"><img src="x/na/five.png" width="40" height="80" border="0" /></td>
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+        <ul id="tab1_21" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x41.htm" rel="countrycontainer">2</a></li>
+          <li><a href="tab_files/x42.htm" rel="countrycontainer">3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_21divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b22a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://haraj.com.sa" target="_blank" rel="nofollow"><img src="x/g1.png" dir="rtl" title="حراج سعودي يحتوي على حراج لكل السلع وحراج  
+ السيارات وحراج العقار وحراج الأجهزة تأسس عام 2008" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://ksa.motory.com/ar/" target="_blank"><img src="x/i18.png" dir="rtl" title="أفضل حراج لشراء وبيع السيارات والأخبار المتعلقة بها" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.assayyarat.com/" target="_blank"><img src="x/i7.png" dir="rtl" title="السيارات الموقع العربي الأول للسيارات" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://syarah.com/" target="_blank"><img src="x/w1.png" dir="rtl" title="موقع سيارة - حراج السيارات السعودية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://taqdeer.sa/" target="_blank"><img src="x/na/taqdeer.png" dir="rtl" title="مراكز تقدير اضرار المركبات" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.almuraba.net/" target="_blank" rel="nofollow"><img src="x/w5.png" dir="rtl" title="المربع نت: تابع اخر اخبار السيارات كل يوم" width="80" height="40" border="0" /></a></td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_21=new ddajaxtabs("tab1_21", "tab1_21divcontainer")
+
+
+
+tab1_21.setpersist(true)
+
+
+
+tab1_21.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_21.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+        <ul id="tab1_22" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x43.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x44.htm" rel="countrycontainer"> 3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_22divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td colspan="2"><img src="x/na/b23a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="http://vb.eqla3.com/" target="_blank" rel="nofollow"><img src="x/i1.png" dir="rtl" title="منتديات شبكة الإقلاع" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://hawamer.com/vb" target="_blank" rel="nofollow"><img src="x/i17b.png"  width="80" height="40" border="0" dir="rtl" title="هوامير البورصة السعودية" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.btalah.com/" target="_blank" rel="nofollow"><img src="x/i4.png" dir="rtl" title="منتديات حلول البطالة" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.mbt3th.us/vb/" target="_blank" rel="nofollow"><img src="x/i3.png" dir="rtl" title="شبكة مبتعث  2005- 2020- ملتقى الطلاب المبتعثين" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.arabtrvl.com/vb/" target="_blank" rel="nofollow"><img src="x/i13.png" dir="rtl" title="شبكة و منتديات العرب المسافرون" width="80" height="40" border="0" /></a></td>
+              <td><a href="http://mekshat.com/vb/" target="_blank" rel="nofollow"><img src="x/i6.png" dir="rtl" title="منتديات مكشات، أهم أخبار وأحداث الرحلات والأحوال الجوية" width="80" height="40" border="0" /></a></td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_22=new ddajaxtabs("tab1_22", "tab1_22divcontainer")
+
+
+
+tab1_22.setpersist(true)
+
+
+
+tab1_22.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_22.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+        <ul id="tab1_23" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x45.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x46.htm" rel="countrycontainer"> 3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_23divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b24a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://englishlive.ef.com/ar-sa/" target="_blank" rel="nofollow"><img src="x/o24.png" dir="rtl" title="فصول محادثة جماعية. مدرسين أجانب معتمدين" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.cambly.com/" target="_blank"><img src="x/na/162.png" dir="rtl" title="مارس اللغة الانجليزية مع معلمين من اهل اللغة" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://youglish.com/" target="_blank"><img src="x/na/44.png" dir="rtl" title="تحسين نطق اللغة الإنجليزية " width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.duolingo.com/" target="_blank"><img src="x/na/171.png" dir="rtl" title="دوولينجو هي أشهر طريقة لتعلّم لغة في العالم" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="http://www.bbc.co.uk/learningenglish" target="_blank"><img src="x/c3.png" dir="rtl" title="تعلم اللغة الإنجليزية من خلال الفيديو  والمواد التعليمية المجانية" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://learningenglish.voanews.com/" target="_blank"><img src="x/na/43.png" dir="rtl" title="تعلم اللغة الإنجليزية عن طريق صوت أمريكا" width="80" height="40" border="0" /></a></td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <!-- 202020.net  -->
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_23=new ddajaxtabs("tab1_23", "tab1_23divcontainer")
+
+
+
+tab1_23.setpersist(true)
+
+
+
+tab1_23.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_23.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+        <ul id="tab1_24" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x47.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x48.htm" rel="countrycontainer">3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_24divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b25a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.hawaaworld.com/" target="_blank" rel="nofollow"><img src="x/l1.png" dir="rtl" title="منتديات عالم حواء، أكبر موقع في العالم العربي يخص المرأة" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://www.q8yat.com/" target="_blank" rel="nofollow"><img src="x/l3.png" dir="rtl" title="منتديات كويتيات النسائية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://www.fatafeat.com/" target="_blank" rel="nofollow"><img src="x/l13.png" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://forum.rjeem.com/" target="_blank"><img src="x/l7.png" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr bordercolor="#000000">
+              <td align="center"><a href="https://forum.hawahome.com/" target="_blank" rel="nofollow"><img src="x/l4.png" dir="rtl" title="بيت حواء" width="80" height="40" border="0" /></a></td>
+              <td align="center"><a href="https://vb.3dlat.com/" target="_blank" rel="nofollow"><img src="x/l11.png" dir="rtl" title="منتدى عدلات" width="80" height="40" border="0" /></a></td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="middle"><img src="images/line.png" width="10" height="150" border="0" /></td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+
+
+
+
+
+var tab1_24=new ddajaxtabs("tab1_24", "tab1_24divcontainer")
+
+
+
+tab1_24.setpersist(true)
+
+
+
+tab1_24.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_24.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+    <!--*********************************************-->
+    <td valign="top"><div align="center">
+        <ul id="tab1_25" class="shadetabs" >
+          <li><a href="#" rel="#default" class="selected"> 1</a></li>
+          <li><a href="tab_files/x49.htm" rel="countrycontainer"> 2</a></li>
+          <li><a href="tab_files/x50.htm" rel="countrycontainer">3</a></li>
+        </ul>
+    </div>
+        <div id="tab1_25divcontainer" style="width:180px; margin-bottom: 1em; padding: 0px; font-style: italic; text-align: left;">
+          <table>
+            <tr align="center" valign="bottom" bordercolor="#000000">
+              <td width="122" colspan="2"><img src="x/na/b8a.png" width="160" height="35" border="0" /></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.bayt.com/ar/saudi-arabia/" target="_blank" rel="nofollow"><img src="x/e9.png" dir="rtl" title="بيت.كوم: أكبر موقع للوظائف في الشرق الأوسط" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.wadhefa.com/" target="_blank" rel="nofollow"><img src="x/e10.png" dir="rtl" title="شركة وظيفة كوم للتوظيف ذ.م.م - المملكة العربية السعودية" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://jobs.sa/" target="_blank"><img src="x/na/11.png" dir="rtl" title="أبشر توظيف : وظائف القطاعات الأمنية والعسكرية" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://www.ewdifh.com/" target="_blank"><img src="x/q1.png" dir="rtl" title="أي وظيفة - وظائف حكومية وتوظيف شركات" width="80" height="40" border="0" /></a></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://www.jobzaty.com/" target="_blank"><img src="x/na/jobzaty.png" width="80" height="40" border="0" /></a></td>
+              <td><a href="https://sa.indeed.com/" target="_blank"><img src="x/na/indeed.png" width="80" height="40" border="0" /></a></td>
+            </tr>
+          </table>
+        </div></td>
+    <td valign="top">&nbsp;</td>
+    <script type="c1cc7d281269921753a77d0a-text/javascript">
+
+
+        <!-- 202020.net الرجاء ثم الرجاء عدم الاقتباس من الموقع ولانسمح بذلك كليا -->
+
+
+
+
+
+var tab1_25=new ddajaxtabs("tab1_25", "tab1_25divcontainer")
+
+
+
+tab1_25.setpersist(true)
+
+
+
+tab1_25.setselectedClassTarget("link") //"link" or "linkparent"
+
+
+
+tab1_25.init()
+
+
+
+
+
+
+
+  </script>
+    <!--**************************************************************************-->
+  </tr>
+  <tr>
+    <!--*********************************************-->
+    <td colspan="11" align="center" valign="top"><table width="949" border="0" align="center">
+      <tr>
+        <td colspan="2" align="center"><img src="images/ww1.png" width="934" height="4" border="0" /></td>
+      </tr>
+      
+    </table>
+      <table width="1000" border="0">
+        <tr align="center">
+          <td width="170">info@202020.org</td>
+          <td width="236">www.202020.net © 2007-2025</td>
+          <td width="202" class="style45">جميع الحقوق محفوظة<br /></td>
+          <td width="374" height="29" align="right"><a href="/" target="_parent">الرئيسية</a> &nbsp; | &nbsp; <a href="short.html" target="_parent">المختصر</a> &nbsp; | &nbsp; <a href="top.html" target="_parent">الأكثر زيارة</a> &nbsp; | &nbsp; <a href="old.html" target="_parent">الموقع القديم</a> </td>
+        </tr>
+      </table></td>
+   
+    <!--**************************************************************************-->
+  </tr>
+</table>
+  <p>&nbsp;</p>
+</div>
+
+
+
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c1cc7d281269921753a77d0a-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"951602f84bf1bab8","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.6.2","token":"11262718eebb47a5b347c41ce372b38c"}' crossorigin="anonymous"></script>
 </body>
+
+
+
 </html>
+
