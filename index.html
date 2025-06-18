@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>دواؤك في جيبك</title>
+<style>
+  body { font-family: Arial, sans-serif; direction: rtl; background: #f4f4f9; margin:0; padding:0;}
+  header { background: #4CAF50; color: white; padding: 10px; text-align: center; }
+  .container { max-width: 900px; margin: auto; background: white; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+  input[type=search] { width: 100%; padding: 10px; margin-bottom: 20px; font-size: 1.1em; border: 1px solid #ccc; border-radius: 5px;}
+  table { width: 100%; border-collapse: collapse;}
+  th, td { text-align: right; padding: 10px; border-bottom: 1px solid #ddd;}
+  th { background-color: #4CAF50; color: white;}
+  tr:hover { background-color: #f1f1f1;}
+  .section-title { margin-top: 30px; font-size: 1.5em; color: #333; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;}
+  .dose-calculator { background: #e9f5e9; padding: 15px; border-radius: 8px; margin-top: 15px;}
+  label { display: block; margin-top: 10px;}
+  input[type=number] { width: 100%; padding: 8px; margin-top: 5px; font-size: 1em;}
+  button { margin-top: 15px; background-color: #4CAF50; color: white; border: none; padding: 12px; font-size: 1em; border-radius: 5px; cursor: pointer;}
+  button:hover { background-color: #45a049;}
+  .result { margin-top: 15px; background: white; padding: 10px; border-radius: 5px; border: 1px solid #4CAF50;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>دواؤك في جيبك</h1>
+  <p>تطبيق شامل لحساب جرعات أدوية الأطفال وحالات الطوارئ</p>
+</header>
+
+<div class="container">
+
+  <input type="search" id="search" placeholder="ابحث عن دواء..." oninput="filterTable()" />
+
+  <table id="medTable">
+    <thead>
+      <tr>
+        <th>الدواء</th>
+        <th>التركيز</th>
+        <th>الشكل الصيدلاني</th>
+        <th>دواعي الاستخدام</th>
+        <th>الجرعة (ملجم/كجم)</th>
+        <th>الجرعة المحسوبة</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>باراسيتامول (بروفين)</td>
+        <td>120 mg / 5 ml</td>
+        <td>شراب</td>
+        <td>خفض الحرارة، ألم خفيف</td>
+        <td>10-15 ملجم/كجم</td>
+        <td><input type="number" id="weight1" placeholder="وزن الطفل (كجم)" oninput="calculateDose(1)" /> <span id="dose1"></span> مل</td>
+      </tr>
+      <tr>
+        <td>أموكسيسيلين (أوجمنتين)</td>
+        <td>250 mg / 5 ml</td>
+        <td>شراب</td>
+        <td>التهابات الجهاز التنفسي</td>
+        <td>20-40 ملجم/كجم</td>
+        <td><input type="number" id="weight2" placeholder="وزن الطفل (كجم)" oninput="calculateDose(2)" /> <span id="dose2"></span> مل</td>
+      </tr>
+      <tr>
+        <td>ديكساميثازون</td>
+        <td>0.5 mg / ml</td>
+        <td>حقن</td>
+        <td>التهاب، تحسس</td>
+        <td>0.15 ملجم/كجم</td>
+        <td><input type="number" id="weight3" placeholder="وزن الطفل (كجم)" oninput="calculateDose(3)" /> <span id="dose3"></span> مل</td>
+      </tr>
+      <!-- أضف المزيد هنا حسب الحاجة -->
+    </tbody>
+  </table>
+
+  <div class="section-title">💉 حساب جرعة الطوارئ للأطفال حسب الوزن</div>
+  <div class="dose-calculator">
+    <label for="emergencyWeight">أدخل وزن الطفل (كجم):</label>
+    <input type="number" id="emergencyWeight" placeholder="وزن الطفل بالكجم" />
+    <button onclick="calculateEmergencyDose()">احسب الجرعة الطارئة</button>
+    <div id="emergencyResult" class="result"></div>
+  </div>
+
+  <div class="section-title">💉 سوائل الطوارئ</div>
+  <div class="dose-calculator">
+    <label for="fluidWeight">أدخل وزن الطفل (كجم):</label>
+    <input type="number" id="fluidWeight" placeholder="وزن الطفل بالكجم" />
+    
+    <label for="deficitPercent">اختر نسبة النقص (Deficit %):</label>
+    <select id="deficitPercent">
+      <option value="5">5%</option>
+      <option value="7">7%</option>
+      <option value="10">10%</option>
+    </select>
+    
+    <button onclick="calculateFluids()">احسب سوائل الطوارئ</button>
+    
+    <div id="fluidsResult" class="result"></div>
+  </div>
+
+</div>
+
+<script>
+  function filterTable() {
+    const input = document.getElementById('search').value.toLowerCase();
+    const rows = document.querySelectorAll('#medTable tbody tr');
+    rows.forEach(row => {
+      const medName = row.cells[0].textContent.toLowerCase();
+      const uses = row.cells[3].textContent.toLowerCase();
+      if(medName.includes(input) || uses.includes(input)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function calculateDose(rowNum) {
+    const weight = parseFloat(document.getElementById('weight' + rowNum).value);
+    if (isNaN(weight) || weight <= 0) {
+      document.getElementById('dose' + rowNum).textContent = '';
+      return;
+    }
+    let doseMgPerKg, concentrationMgPerMl;
+    if (rowNum === 1) {
+      doseMgPerKg = 12.5; // متوسط 10-15 mg/kg
+      concentrationMgPerMl = 24; // 120 mg / 5 ml
+    } else if (rowNum === 2) {
+      doseMgPerKg = 30; // متوسط 20-40 mg/kg
+      concentrationMgPerMl = 50; // 250 mg / 5 ml
+    } else if (rowNum === 3) {
+      doseMgPerKg = 0.15;
+      concentrationMgPerMl = 0.5;
+    }
+    const doseMg = weight * doseMgPerKg;
+    const doseMl = (doseMg / concentrationMgPerMl).toFixed(2);
+    document.getElementById('dose' + rowNum).textContent = doseMl;
+  }
+
+  function calculateEmergencyDose() {
+    const weight = parseFloat(document.getElementById('emergencyWeight').value);
+    if (isNaN(weight) || weight <= 0) {
+      alert("يرجى إدخال وزن صحيح");
+      return;
+    }
+    // مثال جرعات طارئة - فقط للتوضيح
+    const doses = {
+      "أدرينالين": 0.01, // mg/kg
+      "ديكساميثازون": 0.15,
+      "أموباربيتال": 5
+    };
+    let resultText = "";
+    for (const [drug, mgPerKg] of Object.entries(doses)) {
+      const doseMg = (mgPerKg * weight).toFixed(2);
+      resultText += `${drug}: ${doseMg} ملجم<br>`;
+    }
+    document.getElementById('emergencyResult').innerHTML = resultText;
+  }
+
+  function calculateFluids() {
+    const weight = parseFloat(document.getElementById('fluidWeight').value);
+    const deficitPercent = parseFloat(document.getElementById('deficitPercent').value);
+    if (isNaN(weight) || weight <= 0) {
+      alert("يرجى إدخال وزن صحيح");
+      return;
+    }
+    if (![5,7,10].includes(deficitPercent)) {
+      alert("اختر نسبة نقص صحيحة");
+      return;
+    }
+    const deficitMl = weight * 1000 * (deficitPercent / 100);
+    const bolusMl = weight * 20; // 20 ml/kg
+    const maintenanceMl = calculateMaintenance(weight);
+    let resultText = `النقص (Deficit) بنسبة ${deficitPercent}%: ${deficitMl} مل<br>`;
+    resultText += `Bolus fluid (20 مل/كجم): ${bolusMl} مل<br>`;
+    resultText += `Maintenance fluids: ${maintenanceMl} مل<br>`;
+    document.getElementById('fluidsResult').innerHTML = resultText;
+  }
+
+  function calculateMaintenance(weight) {
+    // قاعدة Holliday-Segar الشهيرة لحساب Maintenance fluids
+    let ml = 0;
+    if (weight <= 10) {
+      ml = weight * 100;
+    } else if (weight <= 20) {
+      ml = 1000 + (weight - 10) * 50;
+    } else {
+      ml = 1500 + (weight - 20) * 20;
+    }
+    return ml;
+  }
+</script>
+
+</body>
+</html>
