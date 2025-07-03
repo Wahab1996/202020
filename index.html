@@ -1,110 +1,116 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>د. عبدالوهاب - مرجعك الطبي الموثوق</title>
+<title>Dr. Abdulwahab – Your Medical Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f9ff;
-  color: #333;
   margin: 0;
-  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #f4f9ff);
+  color: #333;
 }
 header {
+  text-align: center;
+  padding: 30px 15px;
   background: #004080;
   color: #fff;
-  padding: 20px;
-  text-align: center;
 }
 header h1 {
   margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
 }
 header p {
   margin: 5px 0 0;
+  font-size: 1.2em;
 }
 .intro {
   text-align: center;
-  padding: 30px 15px;
-  background: #e3f2fd;
-}
-.intro h2 {
-  color: #004080;
-  font-size: 2em;
-  margin: 0 0 10px;
-}
-.intro p {
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-.container {
   max-width: 800px;
-  margin: 20px auto;
-  padding: 10px;
+  margin: 30px auto;
+  font-size: 1.2em;
+  color: #004080;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
 }
 .project {
-  background: #fff;
-  margin-bottom: 15px;
-  padding: 15px;
-  border-right: 5px solid #004080;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background: white;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.project:hover {
+  transform: translateY(-5px);
+}
+.project-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #004080;
 }
 .project a {
-  color: #004080;
   text-decoration: none;
-  font-size: 18px;
+  color: #004080;
   font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  margin-top: 10px;
 }
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background: #1a237e;
   color: white;
-  font-size: 0.8em;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  font-size: 0.85em;
+  margin-top: 30px;
 }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>د. عبدالوهاب عبد المنان</h1>
-  <p>طبيب طوارئ أطفال وطموح إلى طب الأسرة</p>
+  <h1>Dr. Abdulwahab</h1>
+  <p>Your Medical Hub</p>
 </header>
 
 <div class="intro">
-  <h2>مرجعك الطبي الموثوق</h2>
-  <p>مرحباً بك في <strong>مرجعك الطبي الموثوق</strong>، دليلك الأمين إلى الأدوات والحاسبات والملخصات الطبية القائمة على أحدث الأدلة العلمية، مصممة خصيصاً لمقدمي الرعاية الصحية. ببساطة، ودقة، وفي متناول يدك دائماً.</p>
+  Welcome to <strong>Your Medical Hub</strong> – a curated collection of essential medical tools and references crafted for healthcare professionals. Clean, reliable, and empowering your daily practice.
 </div>
 
-<div class="container">
-  <h2>مشاريعي</h2>
-
+<div class="projects">
   <div class="project">
-    <a href="https://wahab1996.github.io/EPR" target="_blank">📚 طب الأسرة</a>
-    <p>الوصول السريع إلى خوارزميات ومعايير طب الأسرة.</p>
+    <div class="project-icon">📚</div>
+    <a href="https://wahab1996.github.io/EPR" target="_blank">Family Medicine</a>
+    <p>Key algorithms and criteria for family medicine practice.</p>
   </div>
 
   <div class="project">
-    <a href="https://wahab1996.github.io/D" target="_blank">📄 نموذج تحويل مريض</a>
-    <p>نموذج تفاعلي وقابل للطباعة للاستخدام السريري.</p>
+    <div class="project-icon">📄</div>
+    <a href="https://wahab1996.github.io/D" target="_blank">Patient Referral Form</a>
+    <p>Interactive, printable referral form for clinical use.</p>
   </div>
 
   <div class="project">
-    <a href="https://wahab1996.github.io/Update/" target="_blank">🚑 أدوات طوارئ الأطفال</a>
-    <p>الوصول السريع إلى خوارزميات الطوارئ والحاسبات.</p>
+    <div class="project-icon">🚑</div>
+    <a href="https://wahab1996.github.io/Update/" target="_blank">Pediatric Emergency</a>
+    <p>Quick access to emergency algorithms and calculators.</p>
   </div>
-
 </div>
 
 <footer>
-  © 2025 د. عبدالوهاب عبد المنان الشيخ – جميع الحقوق محفوظة
+  © 2025 Dr. Abdulwahab Abdulmannan AlSheikh – All rights reserved
 </footer>
 
 </body>
